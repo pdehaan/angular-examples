@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>$http.get example</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-app="app">
+
+  <div class="container">
+    <table class="table table-striped" ng-controller="AppCtrl">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users | orderBy: '-age'">
+          <td>{{user.name | bonjour | uppercase | aurevoir}}</td>
+          <td>{{user.age | doubled}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="main.js"></script>
+  <script src="filters.js"></script>
+  <script src="morefilters.js"></script>
+
+</body>
+</html>

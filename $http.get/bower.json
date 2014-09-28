@@ -1,0 +1,20 @@
+{
+  "name": "http-get-example",
+  "version": "1.0.0",
+  "authors": [
+    "Peter deHaan <peter@deseloper.com>"
+  ],
+  "description": "$http.get() example",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.25",
+    "bootstrap": "~3.2.0"
+  }
+}
