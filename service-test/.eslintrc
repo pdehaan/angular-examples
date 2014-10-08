@@ -1,0 +1,13 @@
+env:
+  browser: true
+
+globals:
+  angular: false
+  console: true
+
+rules:
+  global-strict: 1
+  no-console: 0
+  no-extra-boolean-cast: 0
+  no-use-before-define: [1, nofunc]
+  quotes: [1, single]

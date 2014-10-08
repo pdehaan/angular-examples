@@ -1,0 +1,6 @@
+<section ng-show="inactiveResults">
+  <h2>Inactive results <small>({{ inactiveResults.length }})</small></h2>
+  <ul>
+    <li ng-repeat="result in inactiveResults">{{ result.name }}</li>
+  </ul>
+</section>

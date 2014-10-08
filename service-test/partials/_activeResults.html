@@ -1,0 +1,6 @@
+<section ng-show="activeResults">
+  <h2>Active results <small>({{ activeResults.length }})</small></h2>
+  <ul>
+    <li ng-repeat="result in activeResults">{{ result.name }}</li>
+  </ul>
+</section>

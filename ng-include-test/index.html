@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Angular.js ng-include test</title>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body ng-app="app">
+
+  <div class="container" ng-controller="TableController">
+    <table role="grid" class="table table-bordered table-striped" ng-show="results">
+      <caption>
+        <h2>Adventure Time! <small>({{ results.length }})</small></h2>
+      </caption>
+      <thead ng-include="'partials/_table-head.html'"></thead>
+      <tbody>
+        <tr ng-repeat="result in results" ng-include="'partials/_table-body.html'">
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
