@@ -1,0 +1,11 @@
+env:
+  browser: true
+
+globals:
+  angular: false
+  humanizeDuration: false
+  moment: false
+
+rules:
+  global-strict: 1
+  quotes: [1, single]

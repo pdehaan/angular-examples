@@ -1,0 +1,27 @@
+{
+  "name": "filter-test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/pdehaan/angular-examples",
+  "authors": [
+    "Peter deHaan <peter@deseloper.com>"
+  ],
+  "description": "Testing passing arguments to custom filters.",
+  "keywords": [
+    "filter"
+  ],
+  "license": "WTFPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.2.26",
+    "moment": "~2.8.3",
+    "humanize-duration": "~2.0.0"
+  }
+}
