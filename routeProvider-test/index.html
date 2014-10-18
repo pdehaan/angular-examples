@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <base href="/" />
+  <title>$routeProvider test</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <style>
+    .container {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body ng-app="MyApp">
+
+  <div class="container">
+    <nav>
+      <ul class="nav nav-pills">
+        <li><a href="/">Home</a></li>
+        <li><a href="foo">Foo</a></li>
+        <li><a href="bar">Bar</a></li>
+        <li><a href="bar/3">Bar/3</a></li>
+        <li><a href="404">404</a></li>
+      </ul>
+    </nav>
+
+    <div ng-view></div>
+
+    <hr />
+    <p><small>&copy; 2014</small></p>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>
