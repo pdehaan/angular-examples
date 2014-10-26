@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="MainApp">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+  <title ng-bind="TITLE"></title>
+</head>
+<body>
+
+  <div class="container" ng-controller="MainCtrl">
+    <nav>
+      <ul class="nav nav-pills">
+        <li ng-repeat="(label, href) in LINKS">
+          <a ng-href="{{ href }}">{{ label }}</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <h1>{{ TITLE }}</h1>
+    <p class="lead">{{ lead }}</p>
+    <p>Here is some more content.</p>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="constants.js"></script>
+  <script src="controllers.js"></script>
+
+</body>
+</html>
