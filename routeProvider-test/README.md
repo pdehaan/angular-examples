@@ -105,7 +105,7 @@ angular.module('MyApp', ['ngRoute']).config(function ($routeProvider, $locationP
 </section>
 ```
 
-Earlier, in the _/app.js_ file, we defined the "/bar" route as `'/bar/:id?'` (with a trailing "?" on the `id` argument, which sets the `id` argument as optional). We can retrieve the value of the `id` argument by getting it's value from the `$routeParams` controller argument, as seen in the following snippet. In this case we pass the `$routeParams` object directly to the `$scope.params` variabe.
+Earlier, in the _/app.js_ file, we defined the "/bar" route as `'/bar/:id?'` (with a trailing "?" on the `id` argument, which sets the `id` argument as optional). We can retrieve the value of the `id` argument by getting it's value from the `$routeParams` controller argument, as seen in the following snippet. In this case we pass the `$routeParams` object directly to the `$scope.params` variable.
 
 ```js
 controller('BarController', function ($scope, $routeParams) {
