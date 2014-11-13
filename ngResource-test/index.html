@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>ngResource $resource test</title>
+  <style>
+    dt {
+      border-top: 1px solid #CCC;
+      font-family: monospace;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body ng-app="MainApp">
+
+  <div ng-controller="MainController">
+    <dl>
+      <dt>Comments.query():</dt>
+      <dd><pre><code>{{ comments | json }}</code></pre></dd>
+
+      <dt>Comment.get({id: 123}):</dt>
+      <dd><pre><code>{{ comment | json }}</code></pre></dd>
+
+      <dt>Comment.save():</dt>
+      <dd><pre><code>{{ save | json }}</code></pre></dd>
+
+      <dt>comment.$save():</dt>
+      <dd><pre><code>{{ $save | json }}</code></pre></dd>
+
+      <dt>Comment.remove():</dt>
+      <dd><pre><code>{{ remove | json }}</code></pre></dd>
+
+      <dt>comment.$remove():</dt>
+      <dd><pre><code>{{ $remove | json }}</code></pre></dd>
+    </dl>
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="src/scripts/app.js"></script>
+  <script src="src/scripts/controllers.js"></script>
+
+</body>
+</html>

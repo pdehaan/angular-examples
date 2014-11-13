@@ -1,0 +1,10 @@
+env:
+  browser: true
+  node: true
+
+globals:
+  angular: false
+
+rules:
+  camelcase: 0
+  quotes: [1, single]

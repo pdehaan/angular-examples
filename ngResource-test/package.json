@@ -1,0 +1,30 @@
+{
+  "name": "angular-resource-test",
+  "description": "Hapi server for ngResource",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/angular-examples/issues"
+  },
+  "dependencies": {
+    "hapi": "7.5.2",
+    "joi": "4.8.1"
+  },
+  "homepage": "https://github.com/pdehaan/angular-examples",
+  "keywords": [
+    "angular",
+    "ngResource",
+    "$resource",
+    "hapi"
+  ],
+  "license": "WTFPL",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdehaan/angular-examples"
+  },
+  "scripts": {
+    "start": "node server/index",
+    "test": "eslint ."
+  }
+}
